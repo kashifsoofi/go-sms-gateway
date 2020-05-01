@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"strings"
+	"os"
 )
 
 type sendSmsRequest struct {
@@ -43,7 +44,8 @@ func (s *server) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	port := os.Getenv("PORT")
 	s := &server{}
 	http.Handle("/", s)
-	log.Fatal(http.ListenAndServe(":5000", nil))
+	log.Fatal(http.ListenAndServe(":" + port, nil))
 }
