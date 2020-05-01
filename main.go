@@ -46,6 +46,7 @@ func (s *server) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
 func main() {
 	port := os.Getenv("PORT")
 	s := &server{}
+	recipientAndCodeMap = make(map[string]string)
 	http.Handle("/", s)
 	log.Fatal(http.ListenAndServe(":" + port, nil))
 }
