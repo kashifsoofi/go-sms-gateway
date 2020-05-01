@@ -1,0 +1,10 @@
+{
+    "name": "SMS Gateway: Go",
+    "description": "Go SMS Gateway App",
+    "keywords": [
+      "sms-gateway",
+      "go"
+    ],
+    "website": "https://github.com/kashifsoofi/go-sms-gateway",
+    "repository": "https://github.com/kashifsoofi/go-sms-gateway"
+  }
