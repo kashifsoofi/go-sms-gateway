@@ -1,1 +1,1 @@
-# sms-gateway
+# go-sms-gateway
